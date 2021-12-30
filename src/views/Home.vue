@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <el-button type="primary" @click="testFunc">主要按钮</el-button>
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
@@ -13,6 +14,12 @@ export default {
   name: 'Home',
   components: {
     HelloWorld
+  },
+  methods: {
+    testFunc() {
+       // this.$message.success("XXX成功")
+       console.log(122, this.$message);
+    }
   }
 }
 </script>
