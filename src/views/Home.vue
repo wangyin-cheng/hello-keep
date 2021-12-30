@@ -17,7 +17,6 @@ export default {
   },
   methods: {
     testFunc() {
-       // this.$message.success("XXX成功")
        console.log(122, this.$message);
     }
   }
